@@ -18,7 +18,7 @@ body {
     height: 25px;
     background: red;
     border-radius: 50%;
-    animation: jump 1s infinite ease-in-out;
+    animation: jump 1.5s infinite ease-in-out;
 }
 
 .circle:nth-child(1) {
