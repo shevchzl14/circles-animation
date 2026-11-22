@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    background: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    background: red;
+    border-radius: 50%;
+    animation: jump 1s infinite ease-in-out;
+}
+
+.circle:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.circle:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.circle:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.circle:nth-child(4) {
+    animation-delay: 0.45s;
+}
+
+.circle:nth-child(5) {
+    animation-delay: 0.6s;
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-40px);
+    }
+}
